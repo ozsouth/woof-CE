@@ -8,15 +8,15 @@ on:
       name:
         description: 'Human-readable name'
         required: true
-        default: 'JammyPup64 CE'
+        default: 'TrixieRetro64-cd'
       version:
         description: 'Version number'
         required: true
-        default: '10.0'
+        default: '261015'
       suffix:
         description: 'Release name suffix, with leading -'
         required: false
-        default: '-alpha1'
+        default: ''
       arch:
         description: 'Architecture'
         required: false
@@ -24,19 +24,19 @@ on:
       compat-distro:
         description: 'Compatible distro'
         required: false
-        default: 'ubuntu'
+        default: 'debian'
       compat-distro-version:
         description: 'Compatible distro version'
         required: false
-        default: 'jammy64'
+        default: 'dpupt64retro'
       kernel:
         description: 'Kernel version'
         required: false
-        default: '5.15.x'
+        default: '6.6.x'
       prefix:
         description: 'File name prefix'
         required: false
-        default: 'jammypup64ce'
+        default: 'dpupt64r-cd'
       release:
         type: boolean
         description: 'Upload release draft'
@@ -47,7 +47,7 @@ on:
         options:
           - ubuntu-22.04
           - ubuntu-24.04
-        default: 'ubuntu-22.04'
+        default: 'ubuntu-24.04'
 
 jobs:
   build:
